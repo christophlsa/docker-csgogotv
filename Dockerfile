@@ -2,7 +2,7 @@ FROM kmallea/steamcmd
 MAINTAINER Christoph Giesel <mail@cgiesel.de>
 
 # Run commands as the steam user
-USER steam
+#USER steam
 
 # Install CS:GO
 RUN mkdir /home/steam/csgo &&\
