@@ -18,5 +18,5 @@ COPY entrypoint.sh /
 
 EXPOSE 27015
 VOLUME ["/opt/csgo", "/opt/steamcmd"]
-ENTRYPOINT ["/docker-entrypoint.sh"]
+ENTRYPOINT ["/entrypoint.sh"]
 CMD ["gotv"]
