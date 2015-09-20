@@ -5,14 +5,14 @@ if [ "$1" = 'gotv' ]; then
     shift
 
 	# update
-	cd /home/steam/steamcmd &&\
+	cd /opt/steamcmd &&\
     ./steamcmd.sh \
         +login anonymous \
         +force_install_dir ../csgo \
         +app_update 740 \
         +quit
 	
-	cd /home/steam/csgo &&\
+	cd /opt/csgo &&\
 	./srcds_run -game csgo -console +tv_relay "$@"
 	exit 0
 fi
